@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>練習7</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 400px;
+      font-size: 20px;
+      text-align: center;
+    }
+    th, td {
+      border: 2px solid black;
+      padding: 10px;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    h1{
+    text-align: center;
+    color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>學生成績表(加分作業)</h1>
+  <div id="table-container"></div>
+  <script>
+    const headers = ["姓名", "國文", "英文", "數學"];
+    const data = [
+      ["朴昌", 80, 70, 60],
+      ["朴昌范", 90, 80, 70],
+      ["朴國昌", 100, 90, 80]
+    ];
+    const table = document.createElement("table");
+    const thead = document.createElement("thead");
+    const headerRow = document.createElement("tr");
+    headers.forEach(headerText => {
+      const th = document.createElement("th");
+      th.textContent = headerText;
+      headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+    const tbody = document.createElement("tbody");
+    data.forEach(rowData => {
+      const row = document.createElement("tr");
+      rowData.forEach(cellData => {
+        const td = document.createElement("td");
+        td.textContent = cellData;
+        row.appendChild(td);
+      });
+      tbody.appendChild(row);
+    });
+    table.appendChild(tbody);
+    document.getElementById("table-container").appendChild(table);
+  </script>
+
+</body>
+</html>

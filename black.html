@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習2</title>
+</head>
+<body>
+    <script>
+        let obj=new Object();
+        obj.name="野獸先輩";
+        obj.age=24;
+        obj.talk=function(){
+        console.log("我是",this.name,"是個學生 年齡",this.age,"歲");
+        }
+        document.write("我是",obj.name,"是個學生 年齡",obj.age,"歲");
+        document.write("<br>");
+        document.write("你好世界 今天真是個好日子");
+        if (obj.age <= 20) {
+        console.log("未成年 不得參加選舉");
+        window.alert("未成年 不得參加選舉");
+        document.write("<br>");
+        document.write("未成年");
+        }else{
+        console.log("已成年 可以參加選舉");
+        window.alert("已成年 可以參加選舉");
+        document.write("<br>");
+        document.write("已成年");
+        }
+        </script>
+</body>
+</html>

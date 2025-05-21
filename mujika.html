@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習6</title>
+    <style>
+    h1{
+    text-align: center;
+    color: red;
+    }
+    </style>
+</head>
+<body>
+<h1>我喜歡的食物(排名不分先後)</h1>
+<script>
+let arr=['拉麵','冰淇淋','咖哩飯','牛肉麵','牛奶豆花','薯條','雞塊','雞排','吐司','鬆餅'];
+console.log(arr.length);
+console.log(arr[1]);
+console.log(arr[2]);
+console.log(arr[3]);
+console.log(arr[4]);
+console.log(arr[5]);
+console.log(arr[6]);
+console.log(arr[7]);
+console.log(arr[8]);
+console.log(arr[9]);
+console.log(arr[10]);
+console.log(arr.length);
+for (let index = 0; index < arr.length; index++) {
+    document.write('<table border="1">');
+    document.write('<tr><td>食物:' + (index + 1) + '</td>');
+    document.write('<td>' + arr[index] + '</td></tr>');
+}
+document.write("</table>");
+</script>
+</body>
+</html>
