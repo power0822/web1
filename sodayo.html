@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習3</title>
+    <style>
+    #old{
+    color: lightblue;
+    font-size: 50px;
+    }
+    #new{
+    color: red;
+    }
+    #b{
+    border: solid blue;
+    background-color: lightblue;
+    color: red;
+    }
+    body{
+    color: red;
+    text-align: center;
+    }
+    </style>
+</head>
+<body>
+<div>
+<span><buttom id="b" onclick="name()">關於我</buttom></span>
+<h1>學經歷:</h1>
+</div>
+<div>
+<h2 id="old">我是吳政翰</h2>
+</div>
+<div>
+<h2 style="display: none;" id="new">我目前在南台科技大學就讀 是個學生</h2>
+</div>
+<script>
+function name() {
+let oldhtml=document.querySelector("#old");
+let newhtml=document.querySelector("#new");
+oldhtml.style.display="none";
+newhtml.style.display="block";
+newhtml.style.color="red";
+newhtml.style.fontSize="100px";
+}
+</script>
+</body>
+</html>

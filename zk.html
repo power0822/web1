@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習5</title>
+    <style>
+    h1{
+    text-align: center;
+    color: red;
+    }
+    </style>
+</head>
+<body>
+<h1>喜歡的食物:</h1>
+<form>
+<input type="radio" name="eatfood" value="薯條"><h2>薯條</h2>
+<input type="radio" name="eatfood" value="麥克雞塊"><h2>麥克雞塊</h2>
+<input type="radio" name="eatfood" value="漢堡"><h2>漢堡</h2>
+<input type="radio" name="eatfood" value="雞排"><h2>雞排</h2>
+<input type="submit" onclick="name()">
+<input type="reset">
+</form>
+<script>
+    function name() {
+    var resuit='';
+    var dessert=document.getElementsByName('dessert');
+    for (var index = 0; index < dessert.length; index++) {
+        if (dessert[1].checked) {
+        resuit=dessert[1].value;
+        break;
+        }
+    }
+window.alert(value);
+}
+</script>
+</body>
+</html>

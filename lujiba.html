@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習2</title>
+    <style>
+    #new{
+    color: lightblue;
+    font-size: 50px;
+    }
+    #b{
+    border: solid blue;
+    background-color: lightblue;
+    color: red;
+    }
+    body{
+    color: red;
+    text-align: center;
+    }
+    </style>
+</head>
+<body>
+<h1>HTML DOM 實際操作</h1>
+<div id="new">實機演示</div>
+<buttom onclick="name();" id="b">點我變身</buttom>
+<script>
+function name() {
+let elem=document.querySelector("#new");
+elem.innerHTML="2倍!";
+elem.style.color="red";
+elem.style.fontSize="100px";
+}
+</script>
+</body>
+</html>
