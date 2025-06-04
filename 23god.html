@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習6</title>
+    <style>
+    body{
+    color: red;
+    text-align: center;
+    }
+    .b{
+    border: solid black;
+    background-color: lightblue;
+    }
+    </style>
+</head>
+<body>
+<h1>事件處理的練習</h1>
+<span class="b" onmouseover="w(this);" onmouseout="y(this);" onmousedown="c(this);" onmouseup="b(this);">點我
+</span>
+<script>
+    function w(elem) {
+    elem.style.backgroundColor="lightblue";
+    }
+    function y(elem) {
+    elem.style.backgroundColor="yellow";
+    }
+    function c(elem) {
+    elem.style.backgroundColor="red";
+    }
+    function b(elem) {
+    elem.style.backgroundColor="black";
+    }
+</script>
+</body>
+</html>

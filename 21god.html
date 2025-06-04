@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習4</title>
+    <style>
+    body{
+    font-size: 50px;
+    text-align: center;
+    }
+    .tp{
+    color: red;
+    font-size: 100px;
+    }
+    .tc{
+    color: red;
+    font-size: 100px;
+    }
+    .ti{
+    color: red;
+    font-size: 100px;
+    }
+    </style>
+</head>
+<body>
+<h1>練習(出了點問題)</h1>
+<h1 class="tp">蘋果</h1>
+<h1 class="tc">鳳梨</h1>
+<h1 class="ti">香蕉</h1>
+<script>
+const py=document.querySelector("tp");
+py.innerHTML="蘋果好吃";
+console.log(py.innerHTML);
+const c=document.querySelector("tc");
+c.innerHTML="鳳梨不好吃";
+console.log(c.innerHTML);
+const i=document.querySelector("ti");
+i.innerHTML="香蕉好吃";
+console.log(i.innerHTML);
+</script>
+</body>
+</html>

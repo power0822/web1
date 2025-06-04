@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作業</title>
+    <style>
+    body{
+    background-color: black;
+    color: white;
+    }
+    button{
+border: solid blue;
+background-color: lightblue;
+color: red;
+    }
+    </style>
+</head>
+<body>
+<h1>泡麵 一次買夠!!!!!</h1>
+<button onclick="mygo()">go物車總金額 : (點擊即可知道總金額)</button>
+<button>清空go物車</button><br>
+<img src="20210723181930884570.jpg" width="100px" height="100px">
+<p>價格 : 80元</p>
+<button onclick="t1()">加入go物車</button><br>
+<img src="instant-noodle-64d46422e4ac8.png" width="100px" height="100px">
+<p>價格 : 160元</p>
+<button onclick="t2()">加入go物車</button><br>
+<script>
+let tp=0;
+function t1() {
+tp=tp+80
+localStorage.setItem("price",tp);
+price=localStorage.getItem("price");
+console.log(price);
+}
+function t2() {
+tp=tp+160
+localStorage.setItem("price",tp);
+price=localStorage.getItem("price");
+console.log(price);
+}
+function mygo() {
+document.write("商品總額 : " ,tp);
+}
+window.alert("請挑選商品--");
+</script>
+</body>
+</html>
