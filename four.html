@@ -1,44 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css-2</title>
-    <style>
-    body{
-    text-align: center;
-    background-color: lightblue;
-    color: red;
- font-family: 'Courier New', Courier, monospace,標楷體;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-2</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at center, red, yellow, blue);
     }
-.hamburger {
-  width: 30px;
-  height: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-}
-.hamburger span {
-  height: 4px;
-  background: #333;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-    </style>
+
+    .box {
+      width: 300px;
+      height: 300px;
+      border: 3px solid white;
+      border-radius: 16px;
+      background-color: rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1.5rem;
+    }
+      
+  </style>
 </head>
 <body>
-<h1>css漢堡製作(練習)</h1>
-<div class="hamburger">
-<span>
-<a href="https://power0822.github.io/web1/18god.html"><h3>練習1</h3></a>
-<a href="https://power0822.github.io/web1/19god.html"><h3>練習2</h3></a>
-<a href="https://power0822.github.io/web1/20god.html"><h3>練習3</h3></a>
-<a href="https://power0822.github.io/web1/21god.html"><h3>練習4</h3></a>
-<a href="https://power0822.github.io/web1/22god.html"><h3>練習5</h3></a>
-<a href="https://power0822.github.io/web1/23god.html"><h3>練習6</h3></a>
-<a href="https://power0822.github.io/web1/24god.html"><h3>作業</h3></a>
-</span>
-</div>
+  <div class="box">放射漸層背景</div>
 </body>
 </html>
