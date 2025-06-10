@@ -1,74 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>神的期末作業</title>
-    <style>
-    h1{
-    color: white;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>神的期末作業</title>
+  <style>
+    body {
+      background-color: black;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace, 標楷體;
+      margin: 0;
+      padding: 0;
     }
-    h3{
-    color: white;
+
+    h1,
+    h3 {
+      color: white;
     }
-    body{
-    background-color: black;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace,標楷體;
+
+    h3 {
+      text-align: right;
+      padding-right: 20px;
     }
+
     .b-link {
-  font-size: 1.2em;
-  background-color: #ffffff;
-  color: #4CAF50;
-  text-decoration: none;
-  border: 2px solid #4CAF50;
-  border-radius: 10px;
-  width: 300px;
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.b-link:hover {
-  background-color: #4CAF50;
-  color: white;
-}
-img{
-         border: solid blue;
+      font-size: 1.2em;
+      background-color: #ffffff;
+      color: #4CAF50;
+      text-decoration: none;
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      width: 300px;
       padding: 10px;
-      margin: 10px;
-     width: 250px;
-    height: 250px;
-        }
-        div{
-        background-color: lightblue;
-    width: 1800pxx;
-    height: 800px;
-        }
-    </style>
+      margin: 10px auto;
+      display: block;
+    }
+
+    .b-link:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .image-container {
+      background-color: lightblue;
+      width: 90%;
+      max-width: 1800px;
+      margin: 20px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .image-container img {
+      border: solid blue;
+      padding: 10px;
+      width: 250px;
+      height: 250px;
+    }
+
+    .link-container {
+      margin: 20px auto;
+    }
+  </style>
 </head>
+
 <body>
-<h1>網頁設計<br>期末作業</h1>
-<h3 style="text-align: right;">
-課程名稱:網頁設計<br>
-學生姓名:吳政翰<br>
-學號:5B3G0040<br>
-指導老師姓名:劉毓芬<br>
-日期:6月9號<br>
-</h3>
-<div>
-<img src="1000007389.png" style="display: block; margin: auto;">
-<img src="1000007389.png" style="display: block; margin: auto;">
-<img src="1000007389.png" style="display: block; margin: auto;">
-<img src="1000007389.png" style="display: block; margin: auto;">
-<img src="1000007389.png" style="text-align： left;">
-<img src="1000007389.png" style="text-align： right;">
-</div>
-<div>
-  <a href="25god.html" class="b-link">自我介紹</a>
-  <a href="27god.html" class="b-link">作品集</a>
-  <a href="28god.html" class="b-link">學習過程</a>
-  <a href="26god.html" class="b-link">心得與反思</a>
-</div>
+
+  <h1>網頁設計<br>期末作業</h1>
+
+  <h3>
+    課程名稱: 網頁設計<br>
+    學生姓名: 吳政翰<br>
+    學號: 5B3G0040<br>
+    指導老師姓名: 劉毓芬<br>
+    日期: 6月9號<br>
+  </h3>
+
+  <section class="image-container">
+    <img src="1000007389.png" alt="作品圖">
+    <img src="1000007389.png" alt="作品圖">
+    <img src="1000007389.png" alt="作品圖">
+    <img src="1000007389.png" alt="作品圖">
+    <img src="1000007389.png" alt="作品圖">
+    <img src="1000007389.png" alt="作品圖">
+  </section>
+
+  <section class="link-container">
+    <a href="25god.html" class="b-link">自我介紹</a>
+    <a href="27god.html" class="b-link">作品集</a>
+    <a href="28god.html" class="b-link">學習過程</a>
+    <a href="26god.html" class="b-link">心得與反思</a>
+  </section>
+
 </body>
+
 </html>
